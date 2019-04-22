@@ -1,0 +1,16 @@
+//
+//  KITest-Prefix.pch
+//  kitest
+//
+//  Created by HuamoMac on 15/10/30.
+//  Copyright © 2015年 chen. All rights reserved.
+//
+
+#ifndef KITest_Prefix_h
+#define KITest_Prefix_h
+
+
+#import "KIConfig.h"
+
+
+#endif /* KITest_Prefix_h */

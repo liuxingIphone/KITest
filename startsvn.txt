@@ -1,0 +1,40 @@
+sudo svnserve -d -r /Users/huamo/Desktop/Local_SVN_repo
+
+
+
+svn merge --reintegrate svn://127.0.0.1/branches/test
+
+
+
+HuamodeMacBook-Pro:test huamo$ svn info
+Path: .
+Working Copy Root Path: /Users/huamo/Desktop/localBracnch/test
+URL: svn://127.0.0.1/branches/test
+Relative URL: ^/branches/test
+Repository Root: svn://127.0.0.1
+Repository UUID: 2a7bde30-96d9-4c24-ae13-f9d2a1f641d0
+Revision: 40
+Node Kind: directory
+Schedule: normal
+Last Changed Author: admin
+Last Changed Rev: 36
+Last Changed Date: 2016-12-28 11:24:55 +0800 (三, 28 12 2016)
+
+HuamodeMacBook-Pro:test huamo$ svn merge -r 36:head svn://127.0.0.1/trunk
+--- Merging r37 through r40 into '.':
+C    c.txt
+ G   .
+--- Recording mergeinfo for merge of r37 through r40 into '.':
+ U   .
+
+
+
+svn rm svn://127.0.0.1/branches/test -m"b"
+
+
+
+
+
+
+
+
